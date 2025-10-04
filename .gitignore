@@ -1,0 +1,15 @@
+# Ignorar las carpetas de entornos virtuales comunes
+venv/
+env/
+.venv/
+.env/
+
+# Ignorar las carpetas de compilación
+__pycache__/
+*.pyc
+*.pyd
+
+
+# Ignorar las dependencias vendidas dentro de site-packages/pip/
+Lib/
+Scripts/

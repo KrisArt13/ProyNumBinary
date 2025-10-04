@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.imagen-arriba {
+    width: 30%; 
+    max-width: 240px;  
+    height: auto;  
+    margin-bottom: 20px;  
+}
+.calculadora {
+    background-color:#ffb912;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    background-color: #fffbea;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    text-align: right;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #b7a7ff;
+}
+
+button:active {
+    background-color: #d0dbf5;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.botones button:last-child {
+    grid-column: span 4; 
+    background-color: #ff3333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 25%;
+    width: 10pc;
+
+}
+.btn {
+    font-size: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p{
+    font-size: 40px;
+}
+
+@media (max-width: 600px) {
+    .calculadora {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #pantalla {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .imagen-arriba {
+        max-width: 250px;
+    }
+
+    .botones {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .botones button:last-child {
+        grid-column: span 3;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .calculadora {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #pantalla {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 18px;
+    }
+
+    .imagen-arriba {
+        max-width: 280px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .calculadora {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #pantalla {
+        font-size: 26px;
+    }
+
+    .btn {
+        font-size: 22px;
+        padding: 22px;
+    }
+    .imagen-arriba {
+        max-width: 300px;
+    }
+}
